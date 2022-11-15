@@ -1,19 +1,24 @@
 @extends('app')
 @section('content')
+    <div class="container">
 @foreach($allreg as $r)
     <a href="{{ route('regbank', $r->id) }}">{{$r->regions}}</a>
-    <br>
     @endforeach
-<table border="1" width="100%"><caption>Курсы</caption>
+    <a href="{{route('regions')}}">Все банки</a>
+    </div>
+<div class="container">
+<table id="dtBasicExample" class="table">
+    <caption>Выгодные курсы обмена наличной валюты. Лучшие курсы валют в банках на сегодня.</caption>
     <tbody>
     <tr>
         <th>Код</th>
-        @foreach($banks as $b)
-            <th>Банк {{$b->name}}</th>
-        @endforeach
+        <th>Банк</th>
     </tr>
     <tr>
         <td>USD</td>
+        @foreach($banks as $b)
+            <td>{{$b->name}}</td>
+        @endforeach
         @isset($currency)
         @foreach($currency as $c)
             <td>{{$c->USD}}</td>
@@ -54,4 +59,5 @@
     </tr>
     </tbody>
 </table>
+</div>
 @endsection

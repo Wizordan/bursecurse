@@ -1,7 +1,7 @@
 @extends('app')
 @section('content')
 
-
+    <div class="container">
 <h2 class='mb-3'>Курсы всех банков</h2>
 <table id="dtBasicExample" class="table">
     <thead>
@@ -44,5 +44,5 @@
         @endforeach
     </tr>
     </tbody>
-</table>
+</table></div>
 @endsection

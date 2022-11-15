@@ -21,8 +21,8 @@ $('#callback').on('submit',function(event){
         },
     });
 });
-// window.onload = function () { // Событие страница загружена
-//     sendRequest(); // Вызываем функцию с ajax запросом
+// window.onload = function () {
+//     sendRequest();
 // }
 // $('#callback').on('submit',function() {
 //     event.preventDefault();
@@ -34,15 +34,15 @@ $('#callback').on('submit',function(event){
 //     let email = $('#email').val();
 //     let bank = $('#bank').val();
 // function sendRequest(){
-//     let request = new XMLHttpRequest(); // Создаём объект запроса
+//     let request = new XMLHttpRequest();
 //
-//     request.open('GET', '/callback'); // Указываем куда отправить запрос
+//     request.open('GET', '/callback');
 //     request.send(); // Выполняем отправку
 //
-//     request.onreadystatechange = function () { // Дожидаемся ответа
-//         if (request.readyState == 4 && request.status == 200){// Делаем проверку если ответ получен и страница отдала код 200 (открылась)
-//             let response = currency+Code+email+bank; // Получаем ответ как текст (включая html) и сохраням в переменную
-//             console.log(response); // Выводим данные в консоль
+//     request.onreadystatechange = function () {
+//         if (request.readyState == 4 && request.status == 200){
+//             let response = currency+Code+email+bank;
+//             console.log(response);
 //         }
 //     }
 // }

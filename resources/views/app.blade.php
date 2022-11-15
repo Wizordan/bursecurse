@@ -12,6 +12,9 @@
 <body>
 @section('sidebar')
 @show
+<div class="progress">
+    <div class="progress-bar bg-info" role="progressbar" style="width: 100%; height: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <h5 class="my-0 mr-md-auto font-weight-normal">BurseCurse</h5>
     <nav class="my-2 my-md-0 mr-md-3">
@@ -22,7 +25,9 @@
     </nav>
 </div>
 @yield('content')
-
+<div class="progress">
+    <div class="progress-bar bg-info" role="progressbar" style="width: 100%; height: 0px" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
 <footer class="page-footer font-small blue pt-4 footer">
 
     <div class="container-fluid text-center text-md-left">
