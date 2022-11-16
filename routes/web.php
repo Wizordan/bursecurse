@@ -20,3 +20,7 @@ Route::get('/regions','App\Http\Controllers\RegionsController@regions')->name('r
 Route::get('/callback','App\Http\Controllers\CallbackController@callback')->name('about');
 Route::POST('/callback','App\Http\Controllers\CallbackController@callstore')->name('aboutstore');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
