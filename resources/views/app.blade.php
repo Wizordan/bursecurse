@@ -49,16 +49,16 @@
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="{{route('index')}}">Главная</a>
+                        <a href="{{route('index')}}">Тестируем</a>
                     </li>
                     <li>
-                        <a href="{{route('currency')}}">Курсы</a>
+                        <a href="{{route('currency')}}">Контроль</a>
                     </li>
                     <li>
-                        <a href="{{route('regions')}}">Регионы</a>
+                        <a href="{{route('regions')}}">Версий</a>
                     </li>
                     <li>
-                        <a href="{{route('about')}}">О банках</a>
+                        <a href="{{route('about')}}">Git</a>
                     </li>
                 </ul>
 
